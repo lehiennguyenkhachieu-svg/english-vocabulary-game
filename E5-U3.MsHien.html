@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Race - Hh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <div class="header-main">
+                <img src="MOCKUP.VOB.RACE.SEP.png" alt="Smart English Playground Header" class="header-branding-image">
+            </div>
+            <div class="header-titles">
+                <h1 class="unit-title">English 5 - Unit 3 </h1>
+                <h2 class="game-title"> Vocabulary Race - My foreign friends</h2>
+            </div>
+            <div class="start-content">
+                <p class="slogan">Learn and play – Inspire the passion for English!</p>
+                <p class="slogan-vn">Học mà chơi – Khơi nguồn đam mê tiếng Anh!</p>
+                <button id="start-game-btn">Start</button>
+            </div>
+            <div class="footer start-footer">
+                <p>©2025 SepGame – Author: Lê Thị Hiên</p>
+            </div>
+        </div>
+
+        <div id="main-game-screen">
+            <div class="header-main" style="display: none;">
+                </div>
+            <div class="header-titles-main-game"> 
+                <h1 class="unit-title-main-game">English 5</h1>
+                <h2 class="game-title-main-game">Look, listen, choose the correct answer, click Submit, click Next</h2>
+            </div>
+
+            <div class="game-area">
+                <div class="question-section">
+                    <img id="question-image" src="" alt="Vocabulary Image">
+                </div>
+
+                <div class="answer-section">
+                    <button class="answer-btn" id="choice-A">A.</button>
+                    <button class="answer-btn" id="choice-B">B.</button>
+                    <button class="answer-btn" id="choice-C">C.</button>
+                    <button class="answer-btn" id="choice-D">D.</button>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <button id="submit-btn">Submit</button>
+                <button id="try-again-btn" class="hidden">Try again</button>
+                <button id="replay-btn">Replay</button>
+                <button id="next-btn">Next</button>
+                <button id="play-audio-btn">Play Audio</button>
+                <div class="score-display">⭐ <span id="score">0</span>/5</div>
+                <div class="timer-display">⏱️ <span id="timer">00:00</span></div>
+            </div>
+
+            <div class="footer">
+                <p>©2025 SepGame – Author: Lê Thị Hiên</p>
+            </div>
+        </div>
+
+        <div id="congrats-popup" class="popup">
+            <div class="popup-content text-popup">
+                <h3>Awesome!</h3>
+                <p>You have successfully completed the round!</p>
+                <p class="final-time">Total time: <span id="final-total-time">00:00</span></p>
+                <button id="close-congrats-btn">Play New Round</button>
+            </div>
+        </div>
+
+        <div id="try-again-popup" class="popup">
+            <div class="popup-content message-popup">
+                <p>Bạn đã không đạt đủ điểm.</p>
+                <h3>Hãy thử lại nhé!</h3>
+                <p class="final-time">Total time: <span id="final-try-again-time">00:00</span></p>
+                <button id="restart-game-btn">Chơi lại</button>
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="correct-audio" src="assets/audio/correct.mp3"></audio>
+    <audio id="try-again-audio" src="assets/audio/try_again.mp3"></audio>
+    <audio id="word-audio" src=""></audio>
+    <audio id="congrats-music" src="assets/audio/congrats.mp3"></audio>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
